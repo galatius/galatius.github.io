@@ -10,9 +10,9 @@
   <p>
 
   <h4>Lecture overview</h4>
-    <dl>
-      <dt>Lecture 1, Jan 22</dt>
-      <dd>Introduction.  The many points of view on <em>M<sub>g</sub></em>: holomorphic (Riemann surfaces), algebraic geometric (complex algebraic curves), differential geometric (constant curvature), group theoretic (mapping class groups), homotopy theoretic (classifying space for diffeomorphism groups).  The homotopy theoretic incarnation generalizes well to other dimensions.  Statements of some theorems (Harer, Tillmann, Madsen-Weiss; myself and Randal-Williams).  See <a href="https://doi.org/10.1201/9781351251624">this survey</a> for an overview of several papers with Randal-Williams</a>.</dd>
+  <dl>
+    <dt>Lecture 1, Jan 22</dt>
+    <dd>Introduction.  The many points of view on <em>M<sub>g</sub></em>: holomorphic (Riemann surfaces), algebraic geometric (complex algebraic curves), differential geometric (constant curvature), group theoretic (mapping class groups), homotopy theoretic (classifying space for diffeomorphism groups).  The homotopy theoretic incarnation generalizes well to other dimensions.  Statements of some theorems (Harer, Tillmann, Madsen-Weiss; myself and Randal-Williams).  See <a href="https://doi.org/10.1201/9781351251624">this survey</a> for an overview of several papers with Randal-Williams</a>.</dd>
 
       <dt>Lecture 2, Jan 29</dt>
       <dd>Cobordism categories as (non-unital) topological categories.  To a topological category <em>C</em> we associate an ordinary category <em>hC</em> called the homotopy category, and a topological space <em>BC</em> called the classifying space.</dd>
@@ -22,9 +22,20 @@
 
             <dt>Lecture 4, Feb 12</dt>
       <dd>
-	Rational homology of infinite loop spaces.  Homological stability.
+	Characteristic classes of smooth fiber bundles equipped with &Theta;-structure: starting from a characteristic class of vector bundles with &Theta;-structure, apply that to the fiberwise tangent bundle and then fiber integrate (these are the generalized <em>Miller-Morita-Mumford classes</em> see section 3.1 of the above-mentioned <a href="https://arxiv.org/pdf/1811.08151.pdf">survey</a>).
+
+	<br>There is a classifying space for smooth bundles equipped with &Theta;-structure, and having defined the Miller-Morita-Mumford classes <em>&kappa;<sub>c</sub></em> gives us a ring map from the free graded-commutative algebra on abstract symbols <em>&kappa;<sub>c</sub></em> to the classifying space for all smooth bundles with <em>d</em>-dimensional closed fibers equipped with &Theta;-structures.  The group completion map from last time &mdash; from a Hom-space in the cobordism category to a path space in the classifying space &mdash; gives a space-level instantation of this.  In other words,  rational cohomology of (any path component of) the codomain of the group completion map can be identified with the free graded-commutative algebra on those symbols, and that the induced map on cohomology can be identified with evaluating a symbol <em>&kappa;<sub>c</sub></em> on the universal bundle.
+
+	<br>In the last part of the lecture, I then explained the main result asserting that the group completion map becomes acyclic after taking a suitable direct limit.  I made an attempt to state this theorem in the generality in which we prove it, which becomes a bit technical.  The statement is Theorem 1.5 and 7.3 of <a href="https://doi.org/10.4007/annals.2017.186.1.4">this paper</a> with Randal-Williams.
+
+	<br>The flavor of the general result is that one looks at a moduli space of null bordisms of some object of the cobordism category with &Theta;-structure.  Not all null bordisms, only those where the tangential structure is an <em>n</em>-connected map (I spelled out what that means in two cases: <em>d=2</em> and <em>&Theta; = &lbrace;&ast;&rbrace;</em> as well as <em>d=4</em> and <em>&Theta; = &lbrace;&plusmn; 1&rbrace;</em>).  The group completion map restricts to a map from this space of null bordisms to a space of paths in <em>BC<sub>d,&Theta;</sub></em>, and the main result is that this restricted group completion map becomes an acyclic map after taking a suitable colimit over a sequence of maps induced by morphisms in the cobordism category.  This sequence of cobordisms should satisfy some assumptions, including that each of them should contain <em>S<sup>n</sup> x S<sup>n</sup></em> as a connected summand.  In that sense, we &quot;take connected sum with infinitely many copies of <em>S<sup>n</sup> x S<sup>n</sup></em>&quot;.
       </dd>
-    </dl>
+
+            <dt>Lecture 5, Feb 19</dt>
+      <dd>
+	Homological stability strategies, possibly including parts of this <a href="https://arxiv.org/pdf/1203.6830.pdf">preprint</a> with Randal-Williams.  (The preprint was superseded by a later <a href="https://doi.org/10.1090/jams/884">paper</a> which proves a similar result in more generality.)
+      </dd>
+</dl>
   </p>
 </body>
 </html>
